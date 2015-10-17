@@ -1,0 +1,208 @@
+{
+  "ret_code" : 1,
+  "data" : [
+    {
+      "id" : 1080,
+      "small_icon_url" : "putao_icon_quick_wmdc_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "外卖,送餐,饿了吗,吃饭,点餐,快餐,盒饭,外送,打包",
+      "desc" : "",
+      "name_color" : "#333333",
+      "icon_url" : "http:\/\/img.putao.so\/putao_icon_quick_wmdc.png",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "{ \"provider\":\"来自 百度外卖\" }",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/waimai.baidu.com\/mobile\/waimai?qt=shoplist&utm_source=putaoshenghuo&utm_medium=waimai&utm_content=app&utm_term=defealt&utm_campaign=defealt&cid=983245",
+        "cp_info" : "",
+        "pt_h5" : 1,
+        "show_title" : "外卖"
+      },
+      "open_type" : 0,
+      "sort" : 9,
+      "name" : "外卖点餐"
+    },
+    {
+      "id" : 19,
+      "small_icon_url" : "putao_icon_quick_dd_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "打车,打的,的士,出租,出租车,滴滴,嘀嘀,快的,叫车,大黄蜂,易到,用车,招车,专车",
+      "desc" : "",
+      "name_color" : "#333333",
+      "icon_url" : "http:\/\/img.putao.so\/putao_icon_quick_dd.png",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/pay.xiaojukeji.com\/api\/v2\/webapp?city",
+        "cp_info" : "",
+        "pt_h5" : 1,
+        "show_title" : "滴滴打车"
+      },
+      "open_type" : 0,
+      "sort" : 6,
+      "name" : "打车"
+    },
+    {
+      "id" : 104,
+      "dot_info" : {
+        "dot_text" : "热"
+      },
+      "small_icon_url" : "putao_icon_quick_hcp_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "出行订票,出行,订票,火车票,机票,客运,火车票预订,机票预订,客运预订,火车,汽车,抢票,预定,过年,回家",
+      "desc" : "",
+      "name_color" : "#525252",
+      "icon_url" : "putao_icon_quick_hcp",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.train.YellowPageBookTrainTicketActivity",
+        "click_type" : 1,
+        "click_link" : "",
+        "cp_info" : "",
+        "pt_h5" : 1,
+        "show_title" : "火车票"
+      },
+      "open_type" : 0,
+      "sort" : 25,
+      "name" : "火车票"
+    },
+    {
+      "id" : 1009,
+      "small_icon_url" : "putao_icon_quick_dj_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "代驾,打车,租车,找代驾,易代驾",
+      "desc" : "",
+      "name_color" : "#525252",
+      "icon_url" : "http:\/\/img.putao.so\/putao_icon_quick_dj.png",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.ui.web.YellowPageDriverActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/h5.edaijia.cn\/app\/index.html?from=01050070",
+        "cp_info" : "{   \"provider\":\"来自 e代驾\" }",
+        "pt_h5" : 1,
+        "show_title" : "代驾"
+      },
+      "open_type" : 0,
+      "sort" : 30,
+      "name" : "代驾"
+    },
+    {
+      "id" : 61,
+      "dot_info" : {
+        "dot_text" : "特惠"
+      },
+      "small_icon_url" : "putao_icon_quick_chf_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#bbbbbb",
+      "search_keyword" : "查余额,余额,充话费,话费,联通,移动,电信,运营商,充值,电话,扣费",
+      "desc" : "宇宙最低价",
+      "name_color" : "#525252",
+      "icon_url" : "putao_icon_quick_chf",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "{\"tab\": 1}",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageReChargeActivity",
+        "click_type" : 1,
+        "click_link" : "",
+        "cp_info" : "{   \"charge\": {     \"provider\": \"话费流量充值服务由葡萄生活提供\",     \"number\": \"400-811-2580\"   },   \"traffic\": {     \"provider\": \"话费流量充值服务由葡萄生活提供\",     \"number\": \"400-811-2580\"   } }",
+        "pt_h5" : 1,
+        "show_title" : "充话费"
+      },
+      "open_type" : 0,
+      "sort" : 1,
+      "name" : "充话费"
+    },
+    {
+      "id" : 100072,
+      "small_icon_url" : "http:\/\/img.putao.so\/Fv28r1wyHP64b3w2ARjalbPd2tnk",
+      "open_goods_id" : 0,
+      "open_service_id" : 100072,
+      "desc_color" : "#000000",
+      "search_keyword" : "保洁,生活,阿姨上门",
+      "desc" : "",
+      "name_color" : "#525252",
+      "icon_url" : "http:\/\/img.putao.so\/FumpbbLx6tRU3b2s-fBOgoAfXZU9",
+      "open_cp_id" : 20015,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "open_home_url" : "1",
+        "click_link" : "http:\/\/open.putao.so\/redirect\/app",
+        "cp_info" : "阿姨帮",
+        "pt_h5" : "0",
+        "show_title" : "阿姨帮"
+      },
+      "open_type" : 0,
+      "sort" : 8,
+      "name" : "家政保洁"
+    },
+    {
+      "id" : 56,
+      "dot_info" : {
+        "dot_text" : "选座"
+      },
+      "small_icon_url" : "putao_icon_quick_dy_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "看电影,电影票,电影院,电影,热门电影,选座,优惠,影院,院线,影城,imax,3d,预定",
+      "desc" : "买票比价更惠",
+      "name_color" : "#525252",
+      "icon_url" : "putao_icon_quick_dy",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.thirdparty.cinema.ui.YellowPageMovieListActivity",
+        "click_type" : 1,
+        "click_link" : "",
+        "cp_info" : "{   \"top_template\": \"来自 #\",   \"bottom_template\": \"数据来自 #\",   \"cplist\": [ {       \"cp_id\": \"115\",       \"provider\": \"微票儿\"     } ,{       \"cp_id\": \"5\",       \"provider\": \"卖座\"     }  ,{       \"cp_id\": \"2\",       \"provider\": \"格瓦拉\"     } ,{       \"cp_id\": \"116\",       \"provider\": \"抠电影\"     },{       \"cp_id\": \"3\",       \"provider\": \"中影\"     }     ] }",
+        "pt_h5" : 1,
+        "show_title" : "电影"
+      },
+      "open_type" : 0,
+      "sort" : 3,
+      "name" : "电影"
+    },
+    {
+      "id" : 5005,
+      "small_icon_url" : "putao_icon_quick_jd_s",
+      "open_goods_id" : 0,
+      "open_service_id" : 0,
+      "desc_color" : "#000000",
+      "search_keyword" : "订酒店,酒店,旅馆,旅宿,住宿,住店,酒店预订,订房,开房,房,特价,限时,旅店,旅社,公寓,快捷,商务,预定",
+      "desc" : "",
+      "name_color" : "#525252",
+      "icon_url" : "putao_icon_quick_jd",
+      "open_cp_id" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/m.ly.com\/hotel\/",
+        "cp_info" : "{ \"provider\":\"来自 同程酒店\" }",
+        "pt_h5" : 1,
+        "show_title" : "酒店"
+      },
+      "open_type" : 0,
+      "sort" : 27,
+      "name" : "酒店"
+    }
+  ],
+  "data_version" : 1383630
+}

@@ -1,0 +1,39 @@
+{
+  "ret_code" : 1,
+  "data" : [
+    {
+      "open_coupon_id" : 10030,
+      "sort" : 32,
+      "open_cp_id" : 20015,
+      "height" : 0,
+      "open_service_id" : 100100,
+      "start_time" : 1439481600,
+      "end_time" : 1446134400,
+      "coupon_url" : "http:\/\/img.putao.so\/FtnmXQ6GD4XPmlPLVQLs9V4cKiV_",
+      "name" : "蛋糕代金券20元"
+    },
+    {
+      "open_coupon_id" : 10031,
+      "sort" : 33,
+      "open_cp_id" : 20015,
+      "height" : 0,
+      "open_service_id" : 100101,
+      "start_time" : 1439481600,
+      "end_time" : 1446134400,
+      "coupon_url" : "http:\/\/img.putao.so\/Fop1414NIlZkVFgaQtZx1Q6FhKwY",
+      "name" : "鲜花代金券30元"
+    },
+    {
+      "open_coupon_id" : 10035,
+      "sort" : 35,
+      "open_cp_id" : 20015,
+      "height" : 0,
+      "open_service_id" : 100112,
+      "start_time" : 1440777600,
+      "end_time" : 1446220799,
+      "coupon_url" : "http:\/\/img.putao.so\/FiS-Z4ou5IG5SfSCmrNpZ0llN4rx",
+      "name" : "话费代金券"
+    }
+  ],
+  "data_version" : 1734270
+}

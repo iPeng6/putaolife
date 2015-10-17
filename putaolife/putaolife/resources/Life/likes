@@ -1,0 +1,86 @@
+{
+  "ret_code" : 1,
+  "data" : [
+    {
+      "title_color" : "#bbbbbb",
+      "title" : "猜你需要",
+      "fun_views" : [
+        {
+          "id" : 56,
+          "op_type" : 0,
+          "small_icon_url" : "putao_icon_quick_dy_s",
+          "open_goods_id" : 0,
+          "open_service_id" : 0,
+          "desc_color" : "#7b7b7b",
+          "search_keyword" : "看电影,电影票,电影院,电影,热门电影,选座,优惠,影院,院线,影城,imax,3d,预定",
+          "desc" : "买票选座更惠",
+          "name_color" : "#525252",
+          "icon_url" : "putao_icon_quick_dy",
+          "open_cp_id" : 0,
+          "click_action" : {
+            "expend_params" : "",
+            "click_activity" : "so.contacts.hub.thirdparty.cinema.ui.YellowPageMovieListActivity",
+            "click_type" : 1,
+            "click_link" : "",
+            "cp_info" : "{   \"top_template\": \"来自 #\",   \"bottom_template\": \"数据来自 #\",   \"cplist\": [ {       \"cp_id\": \"115\",       \"provider\": \"微票儿\"     } ,{       \"cp_id\": \"5\",       \"provider\": \"卖座\"     }  ,{       \"cp_id\": \"2\",       \"provider\": \"格瓦拉\"     } ,{       \"cp_id\": \"116\",       \"provider\": \"抠电影\"     },{       \"cp_id\": \"3\",       \"provider\": \"中影\"     }     ] }",
+            "pt_h5" : 1,
+            "show_title" : "电影"
+          },
+          "sort" : 3,
+          "name" : "电影"
+        },
+        {
+          "id" : 62,
+          "op_type" : 0,
+          "small_icon_url" : "putao_icon_quick_tg_s",
+          "open_goods_id" : 0,
+          "open_service_id" : 0,
+          "desc_color" : "#7b7b7b",
+          "search_keyword" : "团购,优惠,打折,预定,券,美食,吃,喝,玩,乐,ktv",
+          "desc" : "网罗本地团购",
+          "name_color" : "#333333",
+          "icon_url" : "putao_icon_quick_tg",
+          "open_cp_id" : 0,
+          "click_action" : {
+            "expend_params" : "",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/www.nuomi.com\/cps\/redirect?cid=putao&url=http%3a%2f%2fm.nuomi.com%2f%3fcustomui%3d7",
+            "cp_info" : "{ \"provider\":\"来自 百度糯米\" }",
+            "pt_h5" : 1,
+            "show_title" : "团购-糯米"
+          },
+          "sort" : 2,
+          "name" : "团购"
+        },
+        {
+          "id" : 19,
+          "op_type" : 0,
+          "small_icon_url" : "putao_icon_quick_dd_s",
+          "open_goods_id" : 0,
+          "open_service_id" : 0,
+          "desc_color" : "#7b7b7b",
+          "search_keyword" : "打车,打的,的士,出租,出租车,滴滴,嘀嘀,快的,叫车,大黄蜂,易到,用车,招车,专车",
+          "desc" : "一点即到",
+          "name_color" : "#525252",
+          "icon_url" : "putao_icon_quick_dd",
+          "open_cp_id" : 0,
+          "click_action" : {
+            "expend_params" : "",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/pay.xiaojukeji.com\/api\/v2\/webapp?city",
+            "cp_info" : "",
+            "pt_h5" : 1,
+            "show_title" : "滴滴打车"
+          },
+          "sort" : 1,
+          "name" : "打车"
+        }
+      ],
+      "title_description_color" : "#bbbbbb",
+      "title_description" : "猜你需要"
+    }
+  ],
+  "data_version" : 1791715
+}

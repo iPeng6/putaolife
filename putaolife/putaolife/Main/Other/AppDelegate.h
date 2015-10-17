@@ -1,0 +1,17 @@
+//
+//  AppDelegate.h
+//  putaolife
+//
+//  Created by 玉良彭 on 15/10/7.
+//  Copyright © 2015年 pengyl. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
+@end
+

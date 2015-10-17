@@ -1,0 +1,75 @@
+{
+  "ret_code" : 1,
+  "data" : [
+    {
+      "open_goods_id" : 0,
+      "subtitle" : "支持上门及寄修",
+      "open_service_id" : 0,
+      "scene_id" : 0,
+      "image_url" : "http:\/\/img.putao.so\/native\/jikexiu.jpg",
+      "title_color" : "#f4bc21",
+      "start_time" : 1427817613,
+      "title" : "手机维修",
+      "open_cp_id" : 0,
+      "end_time" : 1464610820,
+      "open_type" : 0,
+      "click_action" : {
+        "expend_params" : "0",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/m.jikexiu.com\/?orderSource=15",
+        "cp_info" : "0",
+        "pt_h5" : 1,
+        "show_title" : "手机维修"
+      },
+      "sort" : 1
+    },
+    {
+      "open_goods_id" : 0,
+      "subtitle" : "买票，出发！",
+      "open_service_id" : 0,
+      "scene_id" : 0,
+      "image_url" : "http:\/\/img.putao.so\/op_pics\/zt2_hclx.jpg",
+      "title_color" : "#71ace8",
+      "start_time" : 1427817613,
+      "title" : "火车旅行",
+      "open_cp_id" : 0,
+      "end_time" : 1464610820,
+      "open_type" : 0,
+      "click_action" : {
+        "expend_params" : "0",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/activity.putao.cn\/Activity_Server\/entry\/m\/detail.s?active_id=2060",
+        "cp_info" : "0",
+        "pt_h5" : 1,
+        "show_title" : "坐着火车去旅行"
+      },
+      "sort" : 2
+    },
+    {
+      "open_goods_id" : 0,
+      "subtitle" : "开卡送豪礼",
+      "open_service_id" : 0,
+      "scene_id" : 0,
+      "image_url" : "http:\/\/img.putao.so\/native\/xinyongkaxiaotu.jpg",
+      "title_color" : "#ff4e4e",
+      "start_time" : 1427817613,
+      "title" : "办信用卡",
+      "open_cp_id" : 0,
+      "end_time" : 1464610820,
+      "open_type" : 0,
+      "click_action" : {
+        "expend_params" : "",
+        "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+        "click_type" : 2,
+        "click_link" : "http:\/\/m.rong360.com\/credit\/theme\/4bf45f0e8a7b255cc9668227aac45e55",
+        "cp_info" : "",
+        "pt_h5" : 1,
+        "show_title" : "开卡送豪礼、享福利"
+      },
+      "sort" : 3
+    }
+  ],
+  "data_version" : 1473212
+}

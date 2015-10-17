@@ -1,0 +1,118 @@
+{
+  "ret_code" : 1,
+  "data" : [
+    {
+      "ad_beans" : [
+        {
+          "end_time" : 1464610820,
+          "sort" : 1,
+          "open_type" : 0,
+          "open_cp_id" : 0,
+          "open_service_id" : 0,
+          "start_time" : 1427817613,
+          "image_url" : "http:\/\/img.putao.so\/activity\/banner9\/banner-4ge.jpg",
+          "open_goods_id" : 0,
+          "click_action" : {
+            "expend_params" : "0",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/activity.putao.cn\/Activity_Server\/entry\/m\/detail.s?active_id=2086",
+            "cp_info" : "0",
+            "pt_h5" : 1,
+            "show_title" : "充话费抽大蟹礼"
+          }
+        }
+      ],
+      "show_type" : 2,
+      "show_way" : 2,
+      "start_time" : 1427817613,
+      "sort" : 1,
+      "end_time" : 1464610820
+    },
+    {
+      "ad_beans" : [
+        {
+          "end_time" : 1464610820,
+          "sort" : 1,
+          "open_type" : 0,
+          "open_cp_id" : 0,
+          "open_service_id" : 0,
+          "start_time" : 1427817613,
+          "image_url" : "http:\/\/img.putao.so\/activity\/banner\/lvyou.jpg",
+          "open_goods_id" : 0,
+          "click_action" : {
+            "expend_params" : "0",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/activity.putao.cn\/Activity_Server\/entry\/m\/detail.s?active_id=2060",
+            "cp_info" : "0",
+            "pt_h5" : 1,
+            "show_title" : "坐着火车去旅行"
+          }
+        }
+      ],
+      "show_type" : 2,
+      "show_way" : 2,
+      "start_time" : 1427817613,
+      "sort" : 3,
+      "end_time" : 1464610820
+    },
+    {
+      "ad_beans" : [
+        {
+          "end_time" : 1464610820,
+          "sort" : 1,
+          "open_type" : 0,
+          "open_cp_id" : 0,
+          "open_service_id" : 0,
+          "start_time" : 1442678399,
+          "image_url" : "http:\/\/img.putao.so\/activity\/banner9\/gq4banner.jpg",
+          "open_goods_id" : 0,
+          "click_action" : {
+            "expend_params" : "0",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/activity.putao.cn\/Activity_Server\/entry\/m\/detail.s?active_id=2091",
+            "cp_info" : "0",
+            "pt_h5" : 1,
+            "show_title" : "国庆看片立减10元"
+          }
+        }
+      ],
+      "show_type" : 2,
+      "show_way" : 2,
+      "start_time" : 1442678399,
+      "sort" : 2,
+      "end_time" : 1464610820
+    },
+    {
+      "ad_beans" : [
+        {
+          "end_time" : 1464610820,
+          "sort" : 1,
+          "open_type" : 0,
+          "open_cp_id" : 0,
+          "open_service_id" : 0,
+          "start_time" : 1427817613,
+          "image_url" : "http:\/\/img.putao.so\/activity\/common\/guanggao\/4.jpg",
+          "open_goods_id" : 0,
+          "click_action" : {
+            "expend_params" : "",
+            "click_activity" : "so.contacts.hub.ui.yellowpage.YellowPageDetailActivity",
+            "click_type" : 2,
+            "click_link" : "http:\/\/activity.putao.cn\/Activity_Server\/entry\/m\/detail.s?active_id=2067",
+            "cp_info" : "",
+            "pt_h5" : 1,
+            "show_title" : "处女座保洁阿姨，你敢约么？"
+          }
+        }
+      ],
+      "show_type" : 2,
+      "show_way" : 2,
+      "start_time" : 1427817613,
+      "sort" : 4,
+      "end_time" : 1464610820
+    }
+  ],
+  "data_version" : 1698331
+}
