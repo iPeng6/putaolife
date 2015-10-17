@@ -15,6 +15,7 @@
 		EC5AE2651BC49E1C0091F8B1 /* PTLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2641BC49E1C0091F8B1 /* PTLifeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2681BC4ACEB0091F8B1 /* PTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2671BC4ACEB0091F8B1 /* PTCategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE26B1BC4AD030091F8B1 /* PTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE26A1BC4AD030091F8B1 /* PTMeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EC6235DB1BD2B2C300A527DE /* PTNactivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6235DA1BD2B2C300A527DE /* PTNactivity.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2FC671BC65A780076765F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD2FC661BC65A780076765F /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		ECD4842C1BC7A3B400FA4888 /* PTAdBeans.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD4842B1BC7A3B400FA4888 /* PTAdBeans.m */; settings = {ASSET_TAGS = (); }; };
 		ECE46B7B1BD2049100F52D8F /* PTLike.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE46B7A1BD2049100F52D8F /* PTLike.m */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +56,8 @@
 		EC5AE2671BC4ACEB0091F8B1 /* PTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCategoryViewController.m; sourceTree = "<group>"; };
 		EC5AE2691BC4AD030091F8B1 /* PTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMeViewController.h; sourceTree = "<group>"; };
 		EC5AE26A1BC4AD030091F8B1 /* PTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMeViewController.m; sourceTree = "<group>"; };
+		EC6235D91BD2B2C300A527DE /* PTNactivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivity.h; sourceTree = "<group>"; };
+		EC6235DA1BD2B2C300A527DE /* PTNactivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivity.m; sourceTree = "<group>"; };
 		ECD2FC661BC65A780076765F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECD2FC691BC65CC00076765F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ECD4842A1BC7A3B400FA4888 /* PTAdBeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAdBeans.h; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				ECE46B7A1BD2049100F52D8F /* PTLike.m */,
 				ECE46B821BD2210F00F52D8F /* PTCoupon.h */,
 				ECE46B831BD2210F00F52D8F /* PTCoupon.m */,
+				EC6235D91BD2B2C300A527DE /* PTNactivity.h */,
+				EC6235DA1BD2B2C300A527DE /* PTNactivity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -539,6 +544,7 @@
 				ECE46B841BD2210F00F52D8F /* PTCoupon.m in Sources */,
 				ECF50A391BC9062100259FEE /* PTServiceCell.m in Sources */,
 				ECF50A3F1BC960B500259FEE /* PTServiceCollectionCell.m in Sources */,
+				EC6235DB1BD2B2C300A527DE /* PTNactivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
