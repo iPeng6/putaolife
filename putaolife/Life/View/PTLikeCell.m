@@ -17,11 +17,12 @@
     if (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         //初始化
         CGFloat w = kScreenW/3.0;
-        PTLikeChildView *view1 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(0, 0, w, 100)];
+        CGFloat h = 85;
+        PTLikeChildView *view1 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
  
-        PTLikeChildView *view2 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(w, 0, w, 100)];
+        PTLikeChildView *view2 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(w, 0, w, h)];
 
-        PTLikeChildView *view3 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(w*2, 0, w, 100)];
+        PTLikeChildView *view3 = [[PTLikeChildView alloc] initWithFrame:CGRectMake(w*2, 0, w, h)];
         
         [self.contentView addSubview:view1];
         [self.contentView addSubview:view2];

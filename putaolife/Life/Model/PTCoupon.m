@@ -7,6 +7,8 @@
 //
 
 #import "PTCoupon.h"
+#import "LogExtension.h"
+#import "NSObject+Ex.h"
 
 @implementation PTCoupon
 +(instancetype)couponWithDict:(NSDictionary *)dict{
@@ -18,4 +20,8 @@
 }
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
+
+- (NSString *) description{
+    return [[self dictionaryWithValuesForKeys:self.propertys] descriptionWithLocale:[NSLocale localeWithLocaleIdentifier:@"zh-cn"]];
+}
 @end

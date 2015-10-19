@@ -12,6 +12,7 @@
 @property(nonatomic,copy) NSString *show_title;
 @property(nonatomic,copy) NSString *image_url;
 @property(nonatomic,copy) NSString *click_link;
+@property(nonatomic,assign)NSInteger sort;
 
 +(instancetype) adBeansWithDict:(NSDictionary *)dict;
 @end

@@ -14,6 +14,7 @@
 @property(nonatomic,copy) NSString *show_title;
 @property(nonatomic,copy) NSString *click_link;
 @property(nonatomic,copy) NSString *dot_text;
+@property(nonatomic,assign)NSInteger sort;
 
 +(instancetype) serviceWithDict:(NSDictionary *)dict;
 @end

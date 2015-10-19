@@ -39,12 +39,12 @@
         
         [self.btnName mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
-            make.top.equalTo(@20);
+            make.top.equalTo(@15);
         }];
         
         [self.lbDesc mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.btnName);
-            make.top.equalTo(self.btnName.mas_bottom).offset(10);
+            make.top.equalTo(self.btnName.mas_bottom).offset(5);
         }];
         
         self.backgroundColor = [UIColor whiteColor];

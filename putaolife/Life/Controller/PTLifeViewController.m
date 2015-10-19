@@ -17,12 +17,16 @@
 #import "PTService.h"
 #import "PTLike.h"
 #import "PTCoupon.h"
+#import "PTNactivity.h"
 
 #import "PTBaseTableCell.h"
 #import "PTLifeHeadView.h"
 #import "PTServiceCell.h"
 #import "PTLikeCell.h"
 #import "PTCouponCell.h"
+#import "PTNactivityCell.h"
+
+#import "NetworkTool.h"
 
 @interface PTLifeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong) UITableView *mainTableView;
@@ -120,84 +124,106 @@
     
     //加载团购优惠
     [self loadCoupons];
+    
+    //加载本地服务
+    [self loadNactivities];
 }
 
 /** 加载广告活动*/
 - (void)loadAdActivitys {
     NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"ads" withExtension:nil];
     
-    AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
-    [mgr GET:urlStr.absoluteString parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary * dict) {
-        NSMutableArray *arrM=[NSMutableArray array];
-        NSArray *arrayDict=dict[@"data"];
-        [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-            [arrM addObject:[PTAdBeans adBeansWithDict:obj]];
-        }];
-        _adActivitys=arrM;
-        
-        [self.mainTableView.tableHeaderView setValue:self.adActivitys forKey:@"adActivitys"];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTAdBeans adBeansWithDict:obj]];
+            }];
+            _adActivitys=[arrM sortedArrayUsingComparator:^NSComparisonResult(PTAdBeans *obj1, PTAdBeans *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+            
+            [self.mainTableView.tableHeaderView setValue:self.adActivitys forKey:@"adActivitys"];
+        }
     }];
 }
 
 /** 加载基础服务*/
 - (void)loadBaseServices{
     NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"services" withExtension:nil];
-    
-    AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
-    [mgr GET:urlStr.absoluteString parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary * dict) {
-        NSMutableArray *arrM=[NSMutableArray array];
-        NSArray *arrayDict=dict[@"data"];
-        [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-            [arrM addObject:[PTService serviceWithDict:obj]];
-        }];
-        _baseServices=arrM;
-        
-        [self.mainTableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTService serviceWithDict:obj]];
+            }];
+            _baseServices=[arrM sortedArrayUsingComparator:^NSComparisonResult(PTService *obj1, PTService *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+            
+            [self.mainTableView reloadData];
+        }
     }];
 }
 
 /** 加载猜你需要*/
 -(void)loadLikes{
     NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"likes" withExtension:nil];
-    
-    AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
-    [mgr GET:urlStr.absoluteString parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary * dict) {
-        NSMutableArray *arrM=[NSMutableArray array];
-        NSArray *arrayDict=dict[@"data"][0][@"fun_views"];
-        [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-            [arrM addObject:[PTLike likeWithDict:obj]];
-        }];
-        _guessNeeds=arrM;
-        
-        [self.mainTableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"][0][@"fun_views"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTLike likeWithDict:obj]];
+            }];
+            _guessNeeds=[arrM sortedArrayUsingComparator:^NSComparisonResult(PTLike *obj1, PTLike *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+            
+            [self.mainTableView reloadData];
+        }
     }];
 }
 
 /** 加载团购优惠*/
 -(void)loadCoupons{
     NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"cmscoupons" withExtension:nil];
-    
-    AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
-    [mgr GET:urlStr.absoluteString parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary * dict) {
-        NSMutableArray *arrM=[NSMutableArray array];
-        NSArray *arrayDict=dict[@"data"];
-        [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-            [arrM addObject:[PTCoupon couponWithDict:obj]];
-        }];
-        _youHuiCenter=arrM;
-        
-        [self.mainTableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTCoupon couponWithDict:obj]];
+            }];
+            _youHuiCenter=[arrM sortedArrayUsingComparator:^NSComparisonResult(PTCoupon *obj1, PTCoupon *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+
+            
+            [self.mainTableView reloadData];
+        }
+    }];
+}
+
+/** 加载本地服务*/
+-(void)loadNactivities{
+    NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"nactivities" withExtension:nil];
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTNactivity nactivityWithDict:obj]];
+            }];
+            
+            _nactivities = [arrM sortedArrayUsingComparator:^NSComparisonResult(PTNactivity *obj1, PTNactivity *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+            
+            [self.mainTableView reloadData];
+        }
     }];
 }
 
@@ -286,29 +312,39 @@
         if (indexPath.row==0) {
             cell.textLabel.text=@"猜你需要";
         }else{
-            static NSString *const kServiceReuseId=@"likeCell";
-            PTLikeCell *cell=[tableView dequeueReusableCellWithIdentifier:kServiceReuseId];
+            static NSString *const kLikeReuseId=@"likeCell";
+            PTLikeCell *cell=[tableView dequeueReusableCellWithIdentifier:kLikeReuseId];
             if (cell==nil) {
-                cell=[[PTLikeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kServiceReuseId];
+                cell=[[PTLikeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kLikeReuseId];
             }
             
             cell.guessNeeds = self.guessNeeds;
             return cell;
         }
-    }else if(indexPath.section==2) {
+    }else if(indexPath.section == 2) {
         if (indexPath.row==0) {
             cell.textLabel.text=@"优惠中心";
         }else{
-            static NSString *const kServiceReuseId=@"couponCell";
-            PTCouponCell *cell=[tableView dequeueReusableCellWithIdentifier:kServiceReuseId];
+            static NSString *const kCouponReuseId=@"couponCell";
+            PTCouponCell *cell=[tableView dequeueReusableCellWithIdentifier:kCouponReuseId];
             if (cell==nil) {
-                cell=[[PTCouponCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kServiceReuseId];
+                cell=[[PTCouponCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCouponReuseId];
             }
             
             cell.youHuiCenter = self.youHuiCenter;
             return cell;
         }
-    }else if (indexPath.section==4){
+    }else if(indexPath.section == 3){
+        static NSString *const kNactivityReuseId=@"nactivityCell";
+        PTNactivityCell *cell=[tableView dequeueReusableCellWithIdentifier:kNactivityReuseId];
+        if (cell==nil) {
+            cell=[[PTNactivityCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kNactivityReuseId];
+        }
+        
+        cell.nactivities = self.nactivities;
+        return cell;
+    }
+    else if (indexPath.section==4){
         if (indexPath.row==0) {
             cell.textLabel.text=@"精选";
         }
@@ -322,19 +358,19 @@
         return 190;
     }else if (indexPath.section==1){
         if (indexPath.row==0) {
-            return 35;
+            return 34;
         }
-        return 100;
+        return 85;
     }else if (indexPath.section==2){
         if (indexPath.row==0) {
-            return 35;
+            return 34;
         }
         return 100;
     }else if (indexPath.section==3){
-        return 250;
+        return 190;
     }else if(indexPath.section==4){
         if (indexPath.row==0) {
-            return 35;
+            return 34;
         }
         return 80;
     }else{

@@ -14,6 +14,7 @@
 @property(nonatomic,copy) NSString *desc;
 @property(nonatomic,copy) NSString *click_link;
 @property(nonatomic,copy) NSString *show_title;
+@property(nonatomic,assign)NSInteger sort;
 
 +(instancetype)likeWithDict:(NSDictionary *)dict;
 @end

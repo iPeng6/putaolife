@@ -10,6 +10,7 @@
 
 @interface PTCoupon : NSObject
 @property(nonatomic,copy) NSString *coupon_url;
+@property(nonatomic,assign)NSInteger sort;
 
 +(instancetype) couponWithDict:(NSDictionary *)dict;
 @end

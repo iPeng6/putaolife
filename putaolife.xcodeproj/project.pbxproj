@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6D973474F0B328C71FA89AE6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1022D1AA7B1DA1BC4CE3C9BB /* libPods.a */; };
+		EC1515E31BD5171600157B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515E21BD5171600157B14 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		EC1515E71BD5181E00157B14 /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515E61BD5181E00157B14 /* NetworkTool.m */; settings = {ASSET_TAGS = (); }; };
+		EC1515EA1BD5297C00157B14 /* PTNactivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515E91BD5297C00157B14 /* PTNactivityCell.m */; settings = {ASSET_TAGS = (); }; };
+		EC1515EE1BD52A0000157B14 /* PTNactivityCellLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515ED1BD52A0000157B14 /* PTNactivityCellLeftView.m */; settings = {ASSET_TAGS = (); }; };
+		EC1515F11BD52A2C00157B14 /* PTNactivityCellRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515F01BD52A2C00157B14 /* PTNactivityCellRightView.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2071BC499900091F8B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2061BC499900091F8B1 /* main.m */; };
-		EC5AE2321BC49B040091F8B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE22B1BC49B040091F8B1 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE25F1BC49C560091F8B1 /* PTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE25E1BC49C560091F8B1 /* PTTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2621BC49CB10091F8B1 /* PTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2611BC49CB10091F8B1 /* PTNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2651BC49E1C0091F8B1 /* PTLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2641BC49E1C0091F8B1 /* PTLifeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -41,11 +45,19 @@
 		01BA5B866AECD960B6971A9C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1022D1AA7B1DA1BC4CE3C9BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A851EC06BFE76DBCA6630401 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1515E11BD5171600157B14 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = putaolife/AppDelegate.h; sourceTree = "<group>"; };
+		EC1515E21BD5171600157B14 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = putaolife/AppDelegate.m; sourceTree = "<group>"; };
+		EC1515E51BD5181E00157B14 /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		EC1515E61BD5181E00157B14 /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
+		EC1515E81BD5297C00157B14 /* PTNactivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivityCell.h; sourceTree = "<group>"; };
+		EC1515E91BD5297C00157B14 /* PTNactivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivityCell.m; sourceTree = "<group>"; };
+		EC1515EC1BD52A0000157B14 /* PTNactivityCellLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivityCellLeftView.h; sourceTree = "<group>"; };
+		EC1515ED1BD52A0000157B14 /* PTNactivityCellLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivityCellLeftView.m; sourceTree = "<group>"; };
+		EC1515EF1BD52A2C00157B14 /* PTNactivityCellRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivityCellRightView.h; sourceTree = "<group>"; };
+		EC1515F01BD52A2C00157B14 /* PTNactivityCellRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivityCellRightView.m; sourceTree = "<group>"; };
 		EC5AE2021BC499900091F8B1 /* putaolife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = putaolife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AE2061BC499900091F8B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC5AE2161BC499900091F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC5AE22A1BC49B040091F8B1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EC5AE22B1BC49B040091F8B1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EC5AE25D1BC49C560091F8B1 /* PTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTabBarController.h; sourceTree = "<group>"; };
 		EC5AE25E1BC49C560091F8B1 /* PTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTabBarController.m; sourceTree = "<group>"; };
 		EC5AE2601BC49CB10091F8B1 /* PTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNavigationController.h; sourceTree = "<group>"; };
@@ -59,7 +71,7 @@
 		EC6235D91BD2B2C300A527DE /* PTNactivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivity.h; sourceTree = "<group>"; };
 		EC6235DA1BD2B2C300A527DE /* PTNactivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivity.m; sourceTree = "<group>"; };
 		ECD2FC661BC65A780076765F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		ECD2FC691BC65CC00076765F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ECD2FC691BC65CC00076765F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = putaolife/PrefixHeader.pch; sourceTree = "<group>"; };
 		ECD4842A1BC7A3B400FA4888 /* PTAdBeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAdBeans.h; sourceTree = "<group>"; };
 		ECD4842B1BC7A3B400FA4888 /* PTAdBeans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAdBeans.m; sourceTree = "<group>"; };
 		ECE46B791BD2049100F52D8F /* PTLike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLike.h; sourceTree = "<group>"; };
@@ -127,10 +139,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC1515E41BD5179700157B14 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EC1515E51BD5181E00157B14 /* NetworkTool.h */,
+				EC1515E61BD5181E00157B14 /* NetworkTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		EC1515EB1BD529A300157B14 /* Nactivities(本地服务) */ = {
+			isa = PBXGroup;
+			children = (
+				EC1515E81BD5297C00157B14 /* PTNactivityCell.h */,
+				EC1515E91BD5297C00157B14 /* PTNactivityCell.m */,
+				EC1515EC1BD52A0000157B14 /* PTNactivityCellLeftView.h */,
+				EC1515ED1BD52A0000157B14 /* PTNactivityCellLeftView.m */,
+				EC1515EF1BD52A2C00157B14 /* PTNactivityCellRightView.h */,
+				EC1515F01BD52A2C00157B14 /* PTNactivityCellRightView.m */,
+			);
+			name = "Nactivities(本地服务)";
+			sourceTree = "<group>";
+		};
 		EC5AE1F91BC499900091F8B1 = {
 			isa = PBXGroup;
 			children = (
 				EC5AE2041BC499900091F8B1 /* putaolife */,
+				ECD2FC691BC65CC00076765F /* PrefixHeader.pch */,
+				EC1515E11BD5171600157B14 /* AppDelegate.h */,
+				EC1515E21BD5171600157B14 /* AppDelegate.m */,
 				EC5AE2031BC499900091F8B1 /* Products */,
 				9E79977C3128A649F62E3011 /* Pods */,
 				E3ABF34DB36B74BD7B71C5C9 /* Frameworks */,
@@ -150,9 +187,10 @@
 			children = (
 				ECD2FC4C1BC64D2E0076765F /* Categorys */,
 				EC5AE2261BC49B040091F8B1 /* Main */,
-				EC5AE2211BC49B040091F8B1 /* Life */,
-				EC5AE2331BC49B270091F8B1 /* Category */,
-				EC5AE22D1BC49B040091F8B1 /* Me */,
+				EC5AE2211BC49B040091F8B1 /* Life(生活) */,
+				EC5AE2331BC49B270091F8B1 /* Category(分类) */,
+				EC5AE22D1BC49B040091F8B1 /* Me(我) */,
+				EC1515E41BD5179700157B14 /* Tool */,
 				EC5AE2051BC499900091F8B1 /* Supporting Files */,
 			);
 			path = putaolife;
@@ -165,12 +203,11 @@
 				ECD2FC661BC65A780076765F /* Images.xcassets */,
 				EC5AE2161BC499900091F8B1 /* Info.plist */,
 				EC5AE2061BC499900091F8B1 /* main.m */,
-				ECD2FC691BC65CC00076765F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC5AE2211BC49B040091F8B1 /* Life */ = {
+		EC5AE2211BC49B040091F8B1 /* Life(生活) */ = {
 			isa = PBXGroup;
 			children = (
 				EC5AE2221BC49B040091F8B1 /* Controller */,
@@ -178,6 +215,7 @@
 				EC5AE2241BC49B040091F8B1 /* Other */,
 				EC5AE2251BC49B040091F8B1 /* View */,
 			);
+			name = "Life(生活)";
 			path = Life;
 			sourceTree = "<group>";
 		};
@@ -219,6 +257,7 @@
 		EC5AE2251BC49B040091F8B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC1515EB1BD529A300157B14 /* Nactivities(本地服务) */,
 				ECF50A281BC8CACF00259FEE /* PTBaseTableCell.h */,
 				ECF50A291BC8CACF00259FEE /* PTBaseTableCell.m */,
 				ECF50A2B1BC8D44B00259FEE /* PTLifeHeadView.h */,
@@ -269,8 +308,6 @@
 		EC5AE2291BC49B040091F8B1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				EC5AE22A1BC49B040091F8B1 /* AppDelegate.h */,
-				EC5AE22B1BC49B040091F8B1 /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -282,7 +319,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		EC5AE22D1BC49B040091F8B1 /* Me */ = {
+		EC5AE22D1BC49B040091F8B1 /* Me(我) */ = {
 			isa = PBXGroup;
 			children = (
 				EC5AE22E1BC49B040091F8B1 /* Controller */,
@@ -290,6 +327,7 @@
 				EC5AE2301BC49B040091F8B1 /* Other */,
 				EC5AE2311BC49B040091F8B1 /* View */,
 			);
+			name = "Me(我)";
 			path = Me;
 			sourceTree = "<group>";
 		};
@@ -323,7 +361,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		EC5AE2331BC49B270091F8B1 /* Category */ = {
+		EC5AE2331BC49B270091F8B1 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
 				EC5AE2341BC49B270091F8B1 /* Controller */,
@@ -331,6 +369,7 @@
 				EC5AE2361BC49B270091F8B1 /* Other */,
 				EC5AE2371BC49B270091F8B1 /* View */,
 			);
+			name = "Category(分类)";
 			path = Category;
 			sourceTree = "<group>";
 		};
@@ -529,22 +568,26 @@
 				ECE46B871BD221B300F52D8F /* PTCouponCell.m in Sources */,
 				ECE46B7B1BD2049100F52D8F /* PTLike.m in Sources */,
 				ECE46B7E1BD2087900F52D8F /* PTLikeCell.m in Sources */,
-				EC5AE2321BC49B040091F8B1 /* AppDelegate.m in Sources */,
+				EC1515E31BD5171600157B14 /* AppDelegate.m in Sources */,
 				EC5AE2681BC4ACEB0091F8B1 /* PTCategoryViewController.m in Sources */,
+				EC1515F11BD52A2C00157B14 /* PTNactivityCellRightView.m in Sources */,
 				EC5AE26B1BC4AD030091F8B1 /* PTMeViewController.m in Sources */,
 				ECF50A2D1BC8D44B00259FEE /* PTLifeHeadView.m in Sources */,
 				ECD4842C1BC7A3B400FA4888 /* PTAdBeans.m in Sources */,
+				EC1515EE1BD52A0000157B14 /* PTNactivityCellLeftView.m in Sources */,
 				ECF50A301BC8EBD000259FEE /* PTWebViewController.m in Sources */,
 				ECF50A2A1BC8CACF00259FEE /* PTBaseTableCell.m in Sources */,
 				EC5AE2651BC49E1C0091F8B1 /* PTLifeViewController.m in Sources */,
 				ECF50A331BC8F9D200259FEE /* PTService.m in Sources */,
 				EC5AE2621BC49CB10091F8B1 /* PTNavigationController.m in Sources */,
+				EC1515E71BD5181E00157B14 /* NetworkTool.m in Sources */,
 				EC5AE25F1BC49C560091F8B1 /* PTTabBarController.m in Sources */,
 				EC5AE2071BC499900091F8B1 /* main.m in Sources */,
 				ECE46B841BD2210F00F52D8F /* PTCoupon.m in Sources */,
 				ECF50A391BC9062100259FEE /* PTServiceCell.m in Sources */,
 				ECF50A3F1BC960B500259FEE /* PTServiceCollectionCell.m in Sources */,
 				EC6235DB1BD2B2C300A527DE /* PTNactivity.m in Sources */,
+				EC1515EA1BD5297C00157B14 /* PTNactivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
