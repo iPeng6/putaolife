@@ -13,6 +13,9 @@
 		EC1515EA1BD5297C00157B14 /* PTNactivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515E91BD5297C00157B14 /* PTNactivityCell.m */; settings = {ASSET_TAGS = (); }; };
 		EC1515EE1BD52A0000157B14 /* PTNactivityCellLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515ED1BD52A0000157B14 /* PTNactivityCellLeftView.m */; settings = {ASSET_TAGS = (); }; };
 		EC1515F11BD52A2C00157B14 /* PTNactivityCellRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1515F01BD52A2C00157B14 /* PTNactivityCellRightView.m */; settings = {ASSET_TAGS = (); }; };
+		EC4E423A1BD5C2650082E457 /* PTStream.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E42391BD5C2650082E457 /* PTStream.m */; settings = {ASSET_TAGS = (); }; };
+		EC4E423D1BD5E30F0082E457 /* PTCpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E423C1BD5E30F0082E457 /* PTCpInfo.m */; settings = {ASSET_TAGS = (); }; };
+		EC4E42401BD61A040082E457 /* PTStreamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4E423F1BD61A040082E457 /* PTStreamCell.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2071BC499900091F8B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2061BC499900091F8B1 /* main.m */; };
 		EC5AE25F1BC49C560091F8B1 /* PTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE25E1BC49C560091F8B1 /* PTTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		EC5AE2621BC49CB10091F8B1 /* PTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2611BC49CB10091F8B1 /* PTNavigationController.m */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +58,12 @@
 		EC1515ED1BD52A0000157B14 /* PTNactivityCellLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivityCellLeftView.m; sourceTree = "<group>"; };
 		EC1515EF1BD52A2C00157B14 /* PTNactivityCellRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivityCellRightView.h; sourceTree = "<group>"; };
 		EC1515F01BD52A2C00157B14 /* PTNactivityCellRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivityCellRightView.m; sourceTree = "<group>"; };
+		EC4E42381BD5C2650082E457 /* PTStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTStream.h; sourceTree = "<group>"; };
+		EC4E42391BD5C2650082E457 /* PTStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTStream.m; sourceTree = "<group>"; };
+		EC4E423B1BD5E30F0082E457 /* PTCpInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCpInfo.h; sourceTree = "<group>"; };
+		EC4E423C1BD5E30F0082E457 /* PTCpInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCpInfo.m; sourceTree = "<group>"; };
+		EC4E423E1BD61A040082E457 /* PTStreamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTStreamCell.h; sourceTree = "<group>"; };
+		EC4E423F1BD61A040082E457 /* PTStreamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTStreamCell.m; sourceTree = "<group>"; };
 		EC5AE2021BC499900091F8B1 /* putaolife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = putaolife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5AE2061BC499900091F8B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC5AE2161BC499900091F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -243,6 +252,10 @@
 				ECE46B831BD2210F00F52D8F /* PTCoupon.m */,
 				EC6235D91BD2B2C300A527DE /* PTNactivity.h */,
 				EC6235DA1BD2B2C300A527DE /* PTNactivity.m */,
+				EC4E42381BD5C2650082E457 /* PTStream.h */,
+				EC4E42391BD5C2650082E457 /* PTStream.m */,
+				EC4E423B1BD5E30F0082E457 /* PTCpInfo.h */,
+				EC4E423C1BD5E30F0082E457 /* PTCpInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +285,8 @@
 				ECE46B801BD2092800F52D8F /* PTLikeChildView.m */,
 				ECE46B851BD221B300F52D8F /* PTCouponCell.h */,
 				ECE46B861BD221B300F52D8F /* PTCouponCell.m */,
+				EC4E423E1BD61A040082E457 /* PTStreamCell.h */,
+				EC4E423F1BD61A040082E457 /* PTStreamCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,9 +589,11 @@
 				EC5AE26B1BC4AD030091F8B1 /* PTMeViewController.m in Sources */,
 				ECF50A2D1BC8D44B00259FEE /* PTLifeHeadView.m in Sources */,
 				ECD4842C1BC7A3B400FA4888 /* PTAdBeans.m in Sources */,
+				EC4E42401BD61A040082E457 /* PTStreamCell.m in Sources */,
 				EC1515EE1BD52A0000157B14 /* PTNactivityCellLeftView.m in Sources */,
 				ECF50A301BC8EBD000259FEE /* PTWebViewController.m in Sources */,
 				ECF50A2A1BC8CACF00259FEE /* PTBaseTableCell.m in Sources */,
+				EC4E423A1BD5C2650082E457 /* PTStream.m in Sources */,
 				EC5AE2651BC49E1C0091F8B1 /* PTLifeViewController.m in Sources */,
 				ECF50A331BC8F9D200259FEE /* PTService.m in Sources */,
 				EC5AE2621BC49CB10091F8B1 /* PTNavigationController.m in Sources */,
@@ -585,6 +602,7 @@
 				EC5AE2071BC499900091F8B1 /* main.m in Sources */,
 				ECE46B841BD2210F00F52D8F /* PTCoupon.m in Sources */,
 				ECF50A391BC9062100259FEE /* PTServiceCell.m in Sources */,
+				EC4E423D1BD5E30F0082E457 /* PTCpInfo.m in Sources */,
 				ECF50A3F1BC960B500259FEE /* PTServiceCollectionCell.m in Sources */,
 				EC6235DB1BD2B2C300A527DE /* PTNactivity.m in Sources */,
 				EC1515EA1BD5297C00157B14 /* PTNactivityCell.m in Sources */,

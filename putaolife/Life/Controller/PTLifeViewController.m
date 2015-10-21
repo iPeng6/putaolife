@@ -18,6 +18,8 @@
 #import "PTLike.h"
 #import "PTCoupon.h"
 #import "PTNactivity.h"
+#import "PTCpInfo.h"
+#import "PTStream.h"
 
 #import "PTBaseTableCell.h"
 #import "PTLifeHeadView.h"
@@ -25,6 +27,7 @@
 #import "PTLikeCell.h"
 #import "PTCouponCell.h"
 #import "PTNactivityCell.h"
+#import "PTStreamCell.h"
 
 #import "NetworkTool.h"
 
@@ -76,7 +79,7 @@
     if (_streams==nil) {
         _streams=[NSArray array];
     }
-    return _nactivities;
+    return _streams;
 }
 
 -(UITableView *)mainTableView{
@@ -111,6 +114,8 @@
     self.navigationController.navigationBarHidden=YES;
 }
 
+#pragma mark - 加载网络数据
+
 /** 加载数据*/
 - (void)loadData{
     //加载广告活动
@@ -127,6 +132,9 @@
     
     //加载本地服务
     [self loadNactivities];
+    
+    //加载精选
+    [self loadStreams];
 }
 
 /** 加载广告活动*/
@@ -200,7 +208,6 @@
             _youHuiCenter=[arrM sortedArrayUsingComparator:^NSComparisonResult(PTCoupon *obj1, PTCoupon *obj2) {
                 return obj1.sort>obj2.sort;
             }];
-
             
             [self.mainTableView reloadData];
         }
@@ -222,6 +229,26 @@
                 return obj1.sort>obj2.sort;
             }];
             
+            [self.mainTableView reloadData];
+        }
+    }];
+}
+
+/** 加载精选*/
+-(void)loadStreams{
+    NSURL *urlStr=[[NSBundle mainBundle] URLForResource:@"streams" withExtension:nil];
+    [[NetworkTool sharedTool] request:NetworkToolMethodGet url:urlStr.absoluteString parameters:nil finished:^(id data, NSError *error) {
+        if (!error) {
+            NSMutableArray *arrM=[NSMutableArray array];
+            NSArray *arrayDict=data[@"data"][@"content_views"][0][@"content_beans"];
+            [arrayDict enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                [arrM addObject:[PTStream streamWithDict:obj]];
+            }];
+            
+            _streams = [arrM sortedArrayUsingComparator:^NSComparisonResult(PTStream *obj1, PTStream *obj2) {
+                return obj1.sort>obj2.sort;
+            }];
+
             [self.mainTableView reloadData];
         }
     }];
@@ -277,6 +304,10 @@
     self.mainTableView.tableHeaderView=headView;
 }
 
+#pragma mark -
+
+#pragma mark - 数据源方法
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 5;
 }
@@ -287,7 +318,7 @@
     }else if (section==1||section==2){
         return 2;
     }else{
-        return 8;
+        return  self.streams.count+1;
     }
 }
 
@@ -347,6 +378,15 @@
     else if (indexPath.section==4){
         if (indexPath.row==0) {
             cell.textLabel.text=@"精选";
+        }else{
+            static NSString *const kSteamReuseId=@"streamCell";
+            PTStreamCell *cell=[tableView dequeueReusableCellWithIdentifier:kSteamReuseId];
+            if (cell==nil) {
+                cell=[[PTStreamCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSteamReuseId];
+            }
+            
+            cell.stream = self.streams[indexPath.row-1];
+            return cell;
         }
     }
     
@@ -372,7 +412,7 @@
         if (indexPath.row==0) {
             return 34;
         }
-        return 80;
+        return 92;
     }else{
         return 70;
     }
@@ -381,8 +421,11 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 5;
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 5;
 }
+
+#pragma mark -
 
 @end

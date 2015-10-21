@@ -1,4 +1,3 @@
-//
 //  PTNactivity.m
 //  putaolife
 //
