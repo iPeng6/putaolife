@@ -105,7 +105,6 @@
 
 -(void)setStream:(PTStream *)stream{
     _stream = stream;
-    NSLog(@"%@",stream);
     
     [self.imgView sd_setImageWithURL:[NSURL URLWithString:stream.img_url]
                     placeholderImage:[UIImage imageNamed:@"putao_home_refresh"]];
