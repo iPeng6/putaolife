@@ -7,7 +7,7 @@
 //
 
 #import "PTServiceCell.h"
-#import "UIView+Extension.h"
+#import "UIView+Ex.h"
 #import "PTServiceCollectionCell.h"
 
 @interface PTServiceCell()<UICollectionViewDataSource>

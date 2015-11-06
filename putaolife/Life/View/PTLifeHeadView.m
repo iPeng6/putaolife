@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "UIImageView+WebCache.h"
 #import "PTAdBeans.h"
-#import "UIView+Extension.h"
+#import "UIView+Ex.h"
 
 @implementation PTLifeHeadView
 

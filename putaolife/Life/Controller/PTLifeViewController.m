@@ -99,15 +99,14 @@
     [super viewDidLoad];
     self.navigationItem.title=@"生活";
     
-    //加载数据
+    // 加载数据
     [self loadData];
     
-    //加载表头视图
+    // 加载表头视图
     [self loadHeadView];
     
-    //加载自定义导航条
+    // 加载自定义导航条
     [self loadNav];
-    
     
 }
 - (void)viewWillAppear:(BOOL)animated{

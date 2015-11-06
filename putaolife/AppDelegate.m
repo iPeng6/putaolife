@@ -12,7 +12,7 @@
 #import "PTLifeViewController.h"
 #import "PTCategoryViewController.h"
 #import "PTMeViewController.h"
-#import "UIImage+Extension.h"
+#import "UIImage+Ex.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
 @implementation AppDelegate
 
 /** 加载各根控制器*/
--(void) initRootVC{
+- (void) initRootVC{
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     PTTabBarController *tabVC=[[PTTabBarController alloc] init];

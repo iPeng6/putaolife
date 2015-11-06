@@ -1,22 +1,14 @@
 //
-//  UIColor+Extensions.h
+//  UIColor+Extensions.m
+//  putaolife
 //
-//  Created by 玉良彭 on 15/8/31.
-//  Copyright (c) 2015年 pengyl. All rights reserved.
+//  Created by 彭玉良 on 15/11/4.
+//  Copyright © 2015年 pengyl. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "UIColor+Ex.h"
 
-@interface UIColor (Extensions)
-
-/** 获取随机颜色*/
-+(instancetype) randomColor;
-
-/** 获取十六进制颜色*/
-+(instancetype) hexColor:(NSString *) hexStr;
-@end
-
-@implementation UIColor (Extensions)
+@implementation UIColor (Ex)
 
 +(instancetype) randomColor{
     

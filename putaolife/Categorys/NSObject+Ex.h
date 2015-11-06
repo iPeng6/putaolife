@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <objc/runtime.h>
 
 @interface NSObject (Ex)
 /** 获取对象所有的属性名称*/
@@ -17,33 +16,3 @@
 
 @end
 
-@implementation NSObject (Ex)
-
--(BOOL)containPropertyNamed:(NSString *)name{
-    unsigned count;
-    objc_property_t *oper= class_copyPropertyList([self class], &count);
-    
-    for (int i=0; i<count; ++i) {
-        NSString *proName =  [NSString stringWithUTF8String:property_getName(oper[i])];
-        if ([proName isEqualToString:name]) {
-            return YES;
-        }
-    }
-    return NO;
-}
-
--(NSArray *)propertys{
-
-    NSMutableArray *arrayM=[NSMutableArray array];
-    
-    unsigned count;
-    objc_property_t *oper= class_copyPropertyList([self class], &count);
-    
-    for (int i=0; i<count; ++i) {
-        NSString *proName =  [NSString stringWithUTF8String:property_getName(oper[i])];
-        [arrayM addObject:proName];
-    }
-    return arrayM;
-}
-
-@end

@@ -10,7 +10,7 @@
 #import <Masonry.h>
 #import "PTNactivity.h"
 #import <UIImageView+WebCache.h>
-#import "UIColor+Extensions.h"
+#import "UIColor+Ex.h"
 
 @interface PTNactivityCellRightView()
 @property(nonatomic,strong) UILabel *lbTitle;

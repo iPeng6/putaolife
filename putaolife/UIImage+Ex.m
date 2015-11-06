@@ -1,25 +1,14 @@
 //
-//  UIImage+Extension.h
-//  备课-网易彩票
+//  UIImage+Ex.m
+//  putaolife
 //
-//  Created by js on 15/2/13.
-//  Copyright (c) 2015年 czbk. All rights reserved.
+//  Created by 彭玉良 on 15/11/4.
+//  Copyright © 2015年 pengyl. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "UIImage+Ex.h"
 
-@interface UIImage (Extension)
-
-/**总是以原始图片呈现去除系统蒙版*/
-+ (instancetype)originImage:(NSString *)imgName;
-
-/**瓦片式拉伸图片*/
-+ (instancetype)resizeImage:(NSString *)imgName;
-
-@end
-
-
-@implementation UIImage (Extension)
+@implementation UIImage (Ex)
 
 + (instancetype)originImage:(NSString *)imgName{
     UIImage *img = [self imageNamed:imgName];

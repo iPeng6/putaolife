@@ -10,7 +10,7 @@
 #import "PTLifeViewController.h"
 #import "PTCategoryViewController.h"
 #import "PTMeViewController.h"
-#import "UIImage+Extension.h"
+#import "UIImage+Ex.h"
 
 @interface PTNavigationController ()
 
