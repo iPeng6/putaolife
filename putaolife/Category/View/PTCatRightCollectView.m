@@ -26,6 +26,7 @@ static NSString *const reuseHeaderId = @"reuseHeaderId";
     layout.itemSize = CGSizeMake(floor((kScreenW-70)/3.0), 110);
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
+    
     layout.headerReferenceSize = CGSizeMake(0, 30);
     
     if (self = [super initWithFrame:CGRectZero collectionViewLayout:layout]) {
@@ -33,11 +34,31 @@ static NSString *const reuseHeaderId = @"reuseHeaderId";
         self.dataSource = self;
         self.delegate = self;
         
-        //注册cell
+        // 注册cell
         [self registerClass:[PTCatRightCell class] forCellWithReuseIdentifier:reuseCellId];
         [self registerClass:[PTCatHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:reuseHeaderId];
         
         self.backgroundColor = [UIColor whiteColor];
+
+        // 监听左侧选择的位置
+        __weak typeof(self) _self = self;
+        [[NSNotificationCenter defaultCenter] addObserverForName:PTCatLeftSelectChange object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+            NSIndexPath *idx = note.object;
+    
+            NSIndexPath *idxNew = [NSIndexPath indexPathForItem:0 inSection:idx.row];
+            [_self scrollToItemAtIndexPath:idxNew atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+            
+            // 矫正位置显示组视图
+            [UIView animateWithDuration:0.25 animations:^{
+                [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+                
+                CGPoint offset = _self.contentOffset;
+                _self.contentOffset = CGPointMake(0, offset.y-30);
+            }];
+            
+        }];
+        
+        
     }
     return self;
 }
@@ -46,7 +67,6 @@ static NSString *const reuseHeaderId = @"reuseHeaderId";
     _navis = navis;
 
     [self reloadData];
-
 }
 
 
@@ -70,8 +90,30 @@ static NSString *const reuseHeaderId = @"reuseHeaderId";
     
     PTCatHeaderView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:reuseHeaderId forIndexPath:indexPath];
     view.name = ((PTNav *)self.navis[indexPath.section]).name;
+
     return view;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (!self.isDragging) {
+        return;
+    }
+    
+    NSArray *paths = [self indexPathsForVisibleSupplementaryElementsOfKind:UICollectionElementKindSectionHeader];
+    
+    // 坑：默认居然没顺序
+    paths = [paths sortedArrayUsingComparator:^NSComparisonResult(NSIndexPath *obj1, NSIndexPath *obj2) {
+        return obj1.section > obj2.section;
+    }];
+    
+    if (paths.count > 0) {
+        // 通知接收者右侧滚动到的位置
+        [[NSNotificationCenter defaultCenter] postNotificationName:PTCatRightSelectChange object:paths.firstObject];
+    }
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 @end

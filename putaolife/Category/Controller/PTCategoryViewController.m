@@ -48,8 +48,9 @@
         
         [_rightCollect mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.leftTable.mas_right);
-            make.top.equalTo(self.leftTable);
-            make.bottom.right.equalTo(self.view);
+            make.top.equalTo(self.view).offset(64);
+            make.right.equalTo(self.view);
+            make.bottom.equalTo(self.view);
         }];
     }
     return _rightCollect;

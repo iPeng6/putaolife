@@ -39,6 +39,7 @@
 }
 
 - (NSString *) description{
-    return [[self dictionaryWithValuesForKeys:self.propertys] descriptionWithLocale:[NSLocale localeWithLocaleIdentifier:@"zh-cn"]];
+    return  [NSString stringWithFormat:@"%@<%p>\n%@",[self class],self, [[self dictionaryWithValuesForKeys:self.propertys] descriptionWithLocale:[NSLocale localeWithLocaleIdentifier:@"zh-cn"]]];
+
 }
 @end
