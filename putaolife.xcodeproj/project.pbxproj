@@ -23,6 +23,8 @@
 		EC5AE2681BC4ACEB0091F8B1 /* PTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE2671BC4ACEB0091F8B1 /* PTCategoryViewController.m */; };
 		EC5AE26B1BC4AD030091F8B1 /* PTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE26A1BC4AD030091F8B1 /* PTMeViewController.m */; };
 		EC6235DB1BD2B2C300A527DE /* PTNactivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6235DA1BD2B2C300A527DE /* PTNactivity.m */; };
+		ECA14DA31BEF704E00DEA06D /* PTMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA14DA21BEF704E00DEA06D /* PTMeCell.m */; };
+		ECA14DA61BEF708600DEA06D /* PTMeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA14DA51BEF708600DEA06D /* PTMeHeadView.m */; };
 		ECAD814E1BD9B6B200102F80 /* navis in Resources */ = {isa = PBXBuildFile; fileRef = ECAD814D1BD9B6B200102F80 /* navis */; };
 		ECAD81511BD9B7EF00102F80 /* PTClickAction.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD81501BD9B7EF00102F80 /* PTClickAction.m */; };
 		ECAD81541BDA19F600102F80 /* PTFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD81531BDA19F600102F80 /* PTFunView.m */; };
@@ -94,6 +96,10 @@
 		EC5AE26A1BC4AD030091F8B1 /* PTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMeViewController.m; sourceTree = "<group>"; };
 		EC6235D91BD2B2C300A527DE /* PTNactivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNactivity.h; sourceTree = "<group>"; };
 		EC6235DA1BD2B2C300A527DE /* PTNactivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNactivity.m; sourceTree = "<group>"; };
+		ECA14DA11BEF704E00DEA06D /* PTMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMeCell.h; sourceTree = "<group>"; };
+		ECA14DA21BEF704E00DEA06D /* PTMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMeCell.m; sourceTree = "<group>"; };
+		ECA14DA41BEF708600DEA06D /* PTMeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMeHeadView.h; sourceTree = "<group>"; };
+		ECA14DA51BEF708600DEA06D /* PTMeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMeHeadView.m; sourceTree = "<group>"; };
 		ECAD814D1BD9B6B200102F80 /* navis */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = navis; sourceTree = "<group>"; };
 		ECAD814F1BD9B7EF00102F80 /* PTClickAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTClickAction.h; sourceTree = "<group>"; };
 		ECAD81501BD9B7EF00102F80 /* PTClickAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTClickAction.m; sourceTree = "<group>"; };
@@ -410,6 +416,10 @@
 		EC5AE2311BC49B040091F8B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECA14DA11BEF704E00DEA06D /* PTMeCell.h */,
+				ECA14DA21BEF704E00DEA06D /* PTMeCell.m */,
+				ECA14DA41BEF708600DEA06D /* PTMeHeadView.h */,
+				ECA14DA51BEF708600DEA06D /* PTMeHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -660,10 +670,12 @@
 				EC5AE26B1BC4AD030091F8B1 /* PTMeViewController.m in Sources */,
 				ECF6E9571BEA254100EEC871 /* NSObject+Ex.m in Sources */,
 				ECF50A2D1BC8D44B00259FEE /* PTLifeHeadView.m in Sources */,
+				ECA14DA31BEF704E00DEA06D /* PTMeCell.m in Sources */,
 				ECD4842C1BC7A3B400FA4888 /* PTAdBeans.m in Sources */,
 				ECAD81511BD9B7EF00102F80 /* PTClickAction.m in Sources */,
 				EC4E42401BD61A040082E457 /* PTStreamCell.m in Sources */,
 				ECF6E95B1BEA25A700EEC871 /* UIColor+Ex.m in Sources */,
+				ECA14DA61BEF708600DEA06D /* PTMeHeadView.m in Sources */,
 				EC1515EE1BD52A0000157B14 /* PTNactivityCellLeftView.m in Sources */,
 				ECF50A301BC8EBD000259FEE /* PTWebViewController.m in Sources */,
 				ECF6E9551BEA245E00EEC871 /* LogExtension.m in Sources */,
